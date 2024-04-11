@@ -1,0 +1,26 @@
+[
+  {
+    "name": "rewardforuserPDC",
+    "policy": "OR('Org1MSP.member', 'Org2MSP.member')",
+    "requiredPeerCount": 1,
+    "maxPeerCount": 1,
+    "blockToLive":0,
+    "memberOnlyRead": true,
+    "memberOnlyWrite": true,
+    "endorsementPolicy": {
+     "signaturePolicy":"OR('Org1MSP.member','Org2MSP.member')"
+   }   
+ },
+ {
+   "name": "rewardforcontractorPDC",
+   "policy": "OR('Org2MSP.member', 'Org3MSP.member')",
+   "requiredPeerCount": 1,
+   "maxPeerCount": 1,
+   "blockToLive":0,
+   "memberOnlyRead": true,
+   "memberOnlyWrite": true,
+   "endorsementPolicy": {
+    "signaturePolicy":"OR('Org2MSP.member','Org3MSP.member')"
+  }   
+ }
+ ]

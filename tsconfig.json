@@ -1,12 +1,15 @@
 {
-    "extends":"@tsconfig/node18/tsconfig.json",
     "compilerOptions": {
+        "skipLibCheck": true,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "outDir": "dist",
+        "target": "es2017",
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "esModuleInterop": true,
         "declaration": true,
-        "sourceMap": true,
-        "noImplicitAny": true
+        "sourceMap": true
     },
     "include": [
         "./src/**/*"
